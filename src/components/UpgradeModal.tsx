@@ -1,0 +1,39 @@
+'use client';
+
+interface UpgradeModalProps {
+    isOpen: boolean;
+    onClose: () => void;
+}
+
+export default function UpgradeModal({ isOpen, onClose }: UpgradeModalProps) {
+    if (!isOpen) return null;
+
+    return (
+        <div className="modal-overlay" onClick={onClose}>
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                <div className="modal-header">
+                    <h3>Pro Feature</h3>
+                    <button className="modal-close" onClick={onClose}>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18" />
+                            <line x1="6" y1="6" x2="18" y2="18" />
+                        </svg>
+                    </button>
+                </div>
+                <p className="text-sm text-secondary" style={{ marginBottom: 'var(--space-5)' }}>
+                    PDF report export is available on the Pro plan. Upgrade to download
+                    professional validation reports you can share with co-founders,
+                    investors, and advisors.
+                </p>
+                <div className="flex gap-3">
+                    <a href="/upgrade" className="btn btn-primary btn-lg" style={{ flex: 1, textAlign: 'center' }}>
+                        View Plans
+                    </a>
+                    <button className="btn btn-secondary" onClick={onClose}>
+                        Maybe Later
+                    </button>
+                </div>
+            </div>
+        </div>
+    );
+}
