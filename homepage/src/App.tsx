@@ -73,8 +73,8 @@ export default function App() {
           </div>
 
           <div className="flex items-center gap-4">
-            <a href="http://localhost:3000/login" className="text-sm font-medium hover:text-accent transition-colors hidden sm:block">Log in</a>
-            <a href="http://localhost:3000/signup" className="btn-primary text-sm py-2 px-4">
+            <a href="https://ventryx-yvqb.vercel.app/login" target="_blank" rel="noopener noreferrer" className="text-sm font-medium hover:text-accent transition-colors hidden sm:block">Login</a>
+            <a href="https://ventryx-yvqb.vercel.app/signup" target="_blank" rel="noopener noreferrer" className="btn-primary text-sm py-2 px-4">
               Get Started
             </a>
           </div>
@@ -103,11 +103,11 @@ export default function App() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="http://localhost:3000/signup" className="btn-primary text-lg px-8 py-4">
-                  Analyze an Idea <ArrowRight className="w-5 h-5" />
+                <a href="https://ventryx-yvqb.vercel.app/signup" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-8 py-4">
+                  Start Analysis <ArrowRight className="w-5 h-5" />
                 </a>
-                <a href="#how-it-works" className="btn-secondary text-lg px-8 py-4">
-                  See Demo
+                <a href="https://ventryx-yvqb.vercel.app/dashboard" target="_blank" rel="noopener noreferrer" className="btn-secondary text-lg px-8 py-4">
+                  View Demo
                 </a>
               </div>
               
@@ -493,7 +493,7 @@ export default function App() {
             <p className="text-xl text-muted mb-10 max-w-2xl mx-auto">
               Run the numbers, see the risks, and get a data-driven validation report for your next big idea today.
             </p>
-            <a href="http://localhost:3000/signup" className="btn-primary text-lg px-8 py-4 inline-flex shadow-glow-accent">
+            <a href="https://ventryx-yvqb.vercel.app/signup" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-8 py-4 inline-flex shadow-glow-accent">
               Try Ventryx Now <ArrowRight className="w-5 h-5" />
             </a>
           </div>
@@ -511,7 +511,8 @@ export default function App() {
           
           <div className="flex items-center gap-6 text-sm font-medium text-muted">
             <a href="#features" className="hover:text-white transition-colors">Features</a>
-            <a href="http://localhost:3000/signup" className="hover:text-white transition-colors">Demo</a>
+            <a href="https://ventryx-yvqb.vercel.app/dashboard" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">View Demo</a>
+            <a href="https://ventryx-yvqb.vercel.app/login" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Login</a>
             <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">GitHub</a>
           </div>
         </div>
