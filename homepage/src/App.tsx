@@ -110,6 +110,18 @@ export default function App() {
                   View Demo
                 </a>
               </div>
+
+              {/* Demo credentials */}
+              <div className="mt-6 inline-flex items-center gap-3 px-4 py-3 rounded-xl border border-secondary/30 bg-secondary/5 backdrop-blur-sm">
+                <div className="w-2 h-2 rounded-full bg-secondary animate-pulse shrink-0" />
+                <div className="text-sm text-muted">
+                  <span className="text-white/70 font-medium">Quick demo access — </span>
+                  login as{' '}
+                  <span className="font-mono text-secondary font-semibold">mvpdemo@gmail.com</span>
+                  {' '}/ pass:{' '}
+                  <span className="font-mono text-secondary font-semibold">mvpdemo</span>
+                </div>
+              </div>
               
               <div className="mt-12 flex items-center gap-6 text-sm text-muted">
                 <div className="flex items-center gap-2">
